@@ -68,3 +68,23 @@ console.log(visyVaisiai);
 
 // Readable code > micro-optimizations
 // 90 %:   problemų yra network,  didelės bibliotekos,  per daug renderių,  netinkamos struktūros
+
+// ------------------------------------------------------------------------------------ For if else  --------------------------
+// for of - ima reikšmes, ne index  _______  for in - per index
+
+// Kai reikia sudėti reikšmes pagal sąlygą, visada:
+// 1 susikuri suminį kintamąjį
+// 2 eini per duomenis su for
+// 3 tikrini su if
+// 4 pridedi
+
+// Vidurkis VISADA = suma / kiekis     Todėl: visada reikia 2 kintamųjų IR skaičiuojam abu tame pačiame cikle
+// Skaičiavimas su ciklu visada reiškia: 
+// let count = 0;
+// for (...) {
+//   count++;
+// }
+
+// Jei reikia suskirstyti duomenis į kategorijas –
+// - darome atskirus skaitiklius
+// - if / else if / else
