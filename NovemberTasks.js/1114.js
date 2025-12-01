@@ -26,6 +26,9 @@ function nearHundred(n) {
   } else {return false;}
 }
 console.log(nearHundred(93));       // true
+// function nearHundred(number){
+//   return(Math.abs(100 -number) <=10) || (Math.abs(200 -number) <=10);
+// }
 // const nearHundred = n => Math.abs(n - 100) <= 10 || Math.abs(n - 200) <= 10;
 
 // 4. backAround ___ Given a string, take the last char and return a new string with the last char added at the front and back, so "cat" yields "tcatt". The original string will be length 1 or more.
@@ -35,6 +38,7 @@ function backAround(str) {
   return last + str + last;
 }
 console.log(backAround("cat"));     // tcatt
+// let last = str.substring(str.length-1);
 // const backAround = str => str.slice(-1) + str + str.slice(-1);
 
 // 5. startHi ___ Given a string, return true if the string starts with "hi" and false otherwise.
